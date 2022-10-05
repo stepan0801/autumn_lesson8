@@ -1,0 +1,328 @@
+@import "reset.css";
+/* =================шрифти===================== */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+@font-face {
+	font-family: "Inter";
+	src: url("../fonts/Inter/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Inter";
+	src: url("../fonts/Inter/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Inter";
+	src: url("../fonts/Inter/Inter-Black.woff2") format("woff2"), url("../fonts/Inter-Black.woff") format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+body{font-family: "Lato";
+	font-style: normal;
+	font-size: 18px;
+}
+.header {
+	margin-bottom: 50px;
+}
+h1{
+	font-family: "Raleway";
+	font-weight: 900;
+	font-size: 40px;
+	max-width: 250px;
+	margin: 0 auto;
+	margin-top: 10px;
+	border: 1px solid blue;
+	background-color: blue;
+	color: aquamarine;
+	text-align: center;
+	opacity: 0.9;
+}
+
+/* ==================стилі фігма================ */
+.figma{
+	margin-bottom: 40px;
+}
+.container{
+	max-width: 1230px;
+	margin: 0 auto;
+}
+.about{
+	margin-bottom: 180px;
+}
+.sub-tittle{
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 1.3;
+	color: #1E212C;
+	margin-bottom: 40px;
+}
+.main-text p{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #424551;
+}
+.about .main-text{
+	margin-bottom: 48px;
+}
+ p:not(:last-child){
+	margin-bottom: 10px;
+}
+h3{
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 1.5;
+	color: #1E212C;
+	margin-bottom: 24px;
+}
+.main-list{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #424551;
+	
+}
+.main-list li:not(:last-child){
+	margin-bottom: 4px;
+}
+.about .main-list li{
+	padding-left: 32px;
+	background: url(../img/icons/vector.png) left 6px no-repeat;
+}
+.course{
+	padding-top: 20px;
+}
+h6{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #1E212C;
+	margin-bottom: 8px;
+}
+.course .sub-tittle{
+	margin-bottom: 16px;
+}
+.text-course {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.5;
+	color: #787A80;
+	margin-bottom: 32px;
+}
+.course .main-list{
+	margin-bottom: 32px;
+}
+.course .main-list li{
+	font-weight: 700;
+}
+.course .main-list li:nth-child(1)::before{
+	content: "";
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	background: url(../img/icons/star.png)   no-repeat;
+	margin-right: 8.67px;
+	margin-bottom: -1px;
+}
+.course .main-list li:nth-child(2)::before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	background: url(../img/icons/play.png) no-repeat;
+	margin-right: 8.67px;
+	margin-bottom: -1px;
+}
+.course .main-list li:nth-child(3)::before {
+	content: "";
+	width: 14px;
+	height: 15px;
+	display: inline-block;
+	background: url(../img/icons/person.png) no-repeat;
+	margin-right: 8.67px;
+	margin-bottom: -1px;
+}
+.course .main-text{
+	margin-bottom: 41px;
+}
+
+/* ==================стилі home-work================ */
+.home-work{
+margin-bottom: 30px;
+}
+.circle{
+	padding: 20px;
+}
+.circle a,#text {
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	padding: 50px 10px;
+	border: 1px solid orangered;
+	text-align: center;
+	background-color: orangered;
+	color: aqua;
+	font-weight: 900;
+}
+
+.circle a:not(:last-child) {
+	margin-right: 50px;
+}
+.circle a:nth-child(1):hover{
+   background-color: green;
+	color: wheat;
+	box-shadow: 5px 8px 3px 10px hotpink;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.circle a:nth-child(2):active{
+	font-family: "Inter";
+	font-weight: 500;
+	font-size: 20px;
+	background: radial-gradient(circle, rgba(158, 48, 106, 1) 0%, rgba(11, 16, 50, 0.6110819327731092) 70%);
+	color: grey;
+	box-shadow: inset 3px 4px 6px 5px red;
+}
+.circle a:nth-child(3):visited{
+	background-color: blue;
+	color: yellow;
+}
+.circle a:focus{
+	outline: 3px solid green;	
+}
+.circle a:nth-child(4):hover{
+	background-color: purple;
+	color: paleturquoise;
+}
+.circle a:nth-child(4):active{
+	background-color: yellow;
+	color: blue;
+	box-shadow: 8px 10px 7px 9px orangered, -8px -10px 7px 9px orangered ;
+}
+#text{
+	display: none;
+}
+#text:target{
+	display: inline-block;
+	border-radius: 0;
+	background-color: green;
+	color: wheat;
+	text-decoration: line-through;
+}
+.text-block{
+	padding: 15px;
+	background-color: rgba(128, 128, 128, 0.678);
+	border: 3px solid red;
+	line-height: 1.5;
+	margin-bottom: 25px;
+}
+.text-block p:not(:last-of-type){
+	margin-bottom: 15px;
+}
+.text-block p:nth-child(odd){
+	background-color: olivedrab;
+	color: white;
+	padding: 5px;
+}
+.text-block p:nth-child(even) {
+	background-color: purple;
+	color: aqua;
+	padding: 7px;
+}
+.block-list{
+	font-family: "Inter";
+	font-size: 25px;
+	font-weight: 900;
+	border: 10px dashed blueviolet;
+	padding: 15px;
+	max-width: 500px;
+	border-radius: 9px;
+	text-transform: uppercase;
+	background-color: rgba(250, 128, 114, 0.719);
+	margin-bottom: 40px;
+}
+.block-list ul li{
+	text-decoration: underline;
+}
+.block-list ul li:not(:last-child){
+	margin-bottom: 16px;
+}
+.block-list ul li ul{
+	padding: 15px 0 0 15px;
+	display: none;
+}
+.block-list ul li:nth-child(2):not(.block-list ul li ul li){
+	color: yellow;
+	background-color: blue;
+	text-decoration: none;
+}
+.block-list ul li:hover ul{
+	display: block;
+}
+.block-list ul li:nth-child(4){
+	font-size: 30px;
+	color: sienna;
+}
+.ukraine-list{
+	font-family: "Raleway";
+	font-weight: 900;
+	font-size: 45px;
+	padding: 20px;
+	max-width: 500px;
+	border: 2px solid rgba(128, 128, 128, 0.322);
+	background-color:rgba(128, 128, 128, 0.322) ;
+	margin: 0 auto;
+}
+.ukraine-list li:not(:last-child){
+	margin-bottom: 5px;
+}
+.ukraine-list li:nth-child(odd){
+	color: yellow;
+	background-color: rgb(0, 119, 255);
+}
+.ukraine-list li:nth-child(even) {
+	color: black;
+	background-color: red;
+	display: none;
+}
+.ukraine-list ul:hover li:nth-child(even){
+	display: block;
+}
+.ukraine-list li:nth-child(even)::after{
+	content: "";
+	width: 40px;
+	height:40px;
+	display: inline-block;
+	background-image: url(../img/dr2.svg);
+	margin-bottom: -7px;
+}
+.ukraine-list li:nth-child(odd)::before {
+	content: "";
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	background: url(../img/herb.png) no-repeat;
+	margin-bottom: -7px;
+	margin-left: 4px;
+}
+
+ .link{font-family: "Raleway";
+	font-weight: 900;
+	font-size: 40px;
+	display: block;
+	max-width: 250px;
+	margin: 0 auto;
+	border: 1px solid red;
+	background-color: red;
+	color: aquamarine;
+	text-align: center;
+}
